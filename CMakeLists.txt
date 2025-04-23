@@ -3,8 +3,9 @@
 #       Unix: export LUA_DIR=/home/user/pkg
 #       Windows: set LUA_DIR=c:\lua51
 
-project(lua-cjson C)
 cmake_minimum_required(VERSION 2.6)
+
+project(lua-cjson C)
 
 option(USE_INTERNAL_FPCONV "Use internal strtod() / g_fmt() code for performance")
 option(MULTIPLE_THREADS "Support multi-threaded apps with internal fpconv - recommended" ON)
